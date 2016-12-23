@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.seedcommando_2.payhistory">
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:logo="@drawable/arrow"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="PaymentHistory"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".TransactiondetailActivity" android:parentActivityName=".MainActivity"></activity>
+    </application>
+
+</manifest>
